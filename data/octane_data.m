@@ -8,6 +8,6 @@ if isempty(data)
     data = textscan(fid, '%f64');
     fclose(fid);
     data = reshape(data{1}, 6, 82);
-    data = data(2:end,:);
+    data = data(2:end,:)';
 end
 X = data;
